@@ -98,17 +98,16 @@ float mediavalor(int vetor[], int tamanho) {
 }
 
 
-int maiorquemedia(int vetor[], int tamanho, float media) {
-    int i, count = 0;
+void maiorquemedia(int vetor[], int tamanho, float media) {
+    int i, qntd = 0;
     printf("Valores maiores que a média:\n");
     for (i = 0; i < tamanho; i++) {
         if (vetor[i] > media) {
             printf("%d ", vetor[i]);
-            count++;
+            qntd++;
         }
     }
-    printf("\nQuantidade de valores maiores que a média: %d\n", count);
-    return count;
+    printf("\nQuantidade de valores maiores que a média: %d\n", qntd);
 }
 
 int main() {
