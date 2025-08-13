@@ -66,13 +66,7 @@ int calculo2(int matriz[][6],int  m) {
         matriz[i][5] = mortalidade;
 
      }
-     
-
-     
-     
     
-
-
 }
 
 void printar(int matriz[][6], int m){
@@ -134,8 +128,10 @@ int main() {
 
     printar(matriz, m);
 
+    printincidencia(matriz, m);
+    
     printmortalidade(matriz, m);
 
-    printincidencia(matriz, m);
+    
 
 }
